@@ -2,6 +2,12 @@ language: csharp
 dist: trusty
 mono: none
 dotnet: 2.0.0
+# safelist
+branches:
+  only:
+  - master
+  - dev
+  - broken
 script:
   - dotnet restore
   - dotnet build
